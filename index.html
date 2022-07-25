@@ -2,6 +2,7 @@
 <html>
     <head>
         <script src="main.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h1>SUPER OMEGA COOL HSV GENERATOR POG</h1><hr>
@@ -19,59 +20,67 @@
         <p>uh ok thats the program enjoy</p>
         <h4><i>"Should've just edited the json manually"</i></h4>
         <h2>Main Judgments:</h2>
-        <div id="judgment0">
+        <div class="inputDiv" id="judgment0">
             <hr>
-            <label>Red: </label>
+            <label>Red: </label><br>
             <input id="red"><br>
-            <label>Green: </label>
+            <label>Green: </label><br>
             <input id="green"><br>
-            <label>Blue: </label>
+            <label>Blue: </label><br>
             <input id="blue"><br>
-            <label>Alpha: </label>
+            <label>Alpha: </label><br>
             <input id="alpha"><br>
-            <label>Fade: </label>
+            <label>Fade: </label><br>
             <input type="checkbox" id="fade"><br>
-            <label>Text: </label>
+            <label>Text: </label><br>
             <input id="text"><br>
-            <label>Threshold: </label>
+            <label>Threshold: </label><br>
             <input id="threshold"><br>
             <hr>
         </div>
-        <button id="newJudgment">ADD A NEW ONE</button><br>
+        <div style="text-align: center;">
+            <button id="newJudgment">ADD A NEW ONE</button><br>
+        </div>
         
         <h2>Accuracy Judgments:</h2>
-        <div id="accuracyJudgment0">
+        <div class="inputDiv" id="accuracyJudgment0">
             <hr>
-            <label>Text: </label>
+            <label>Text: </label><br>
             <input id="text"><br>
-            <label>Threshold: </label>
+            <label>Threshold: </label><br>
             <input id="threshold">
             <hr>
         </div>
-        <button id="newAccuracyJudgment">ADD A NEW ONE</button>
+        <div style="text-align: center;">
+            <button id="newAccuracyJudgment">ADD A NEW ONE</button>
+        </div>
         
         <h2>After Cut Angle Judgments:</h2>
-        <div id="afterCutAngleJudgment0">
+        <div class="inputDiv" id="afterCutAngleJudgment0">
             <hr>
-            <label>Text: </label>
+            <label>Text: </label><br>
             <input id="text"><br>
-            <label>Threshold: </label>
+            <label>Threshold: </label><br>
             <input id="threshold">
             <hr>
         </div>
-        <button id="newAfterCutAngleJudgment">ADD A NEW ONE</button><br>
-        
+        <div style="text-align: center;">
+            <button id="newAfterCutAngleJudgment">ADD A NEW ONE</button><br>
+        </div>
+
         <h2>Before Cut Angle Judgments:</h2>
-        <div id="beforeCutAngleJudgment0">
+        <div class="inputDiv" id="beforeCutAngleJudgment0">
             <hr>
-            <label>Text: </label>
+            <label>Text: </label><br>
             <input id="text"><br>
-            <label>Threshold: </label>
+            <label>Threshold: </label><br>
             <input id="threshold">
             <hr>
         </div>
-        <button id="newBeforeCutAngleJudgment">ADD A NEW ONE</button><br>
-        <button id="generate">DO THE GENERATION THING YAYA</button><br>
-        <textarea id="output" rows=10 cols=60></textarea>
+        <div style="text-align: center;">
+            <button id="newBeforeCutAngleJudgment">ADD A NEW ONE</button><br>
+            <button id="generate">DO THE GENERATION THING YAYA</button><br>
+            <textarea id="output" rows=10 cols=60 spellcheck="false" readonly> </textarea>
+        </div>
     </body>
 </html>

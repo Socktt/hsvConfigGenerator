@@ -60,7 +60,10 @@ var currentAfterCutAngleJudgment = 0;
 var currentBeforeCutAngleJudgment = 0;
 
 document.addEventListener("DOMContentLoaded", function() {
-    
+
+    var output = document.querySelector("#output");
+    output.value = ""; 
+
     document.querySelector("#newJudgment")
         .addEventListener('click', function(event) {
             var elem = document.querySelector("#judgment" + currentJudgment);

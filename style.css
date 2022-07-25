@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+    color: white;
+    margin: auto;
+    width: 50%;
+}
+
+.inputDiv {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
