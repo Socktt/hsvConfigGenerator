@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <h1>SUPER OMEGA COOL HSV GENERATOR POG</h1><hr>
+        <p>The main judgments thing is the only thing that seems to have any effect so idk but I left the other thingies there just in case. The red green blue and alpha values are numbers between 0 and 1 and they set the colour of the score. Fade makes the colours into a gradient between the current colour and the previous colour based on how close your score was to the other one. Text is what will actually be shown, formatting thingies are: </p><br>
+        <ul>
+            <li>%b: The score contributed by the part of the swing before cutting the block.</li>
+            <li>%c: The score contributed by the accuracy of the cut.</li>
+            <li>%a: The score contributed by the part of the swing after cutting the block.</li>
+            <li>%B, %C, %A: As above, except using the appropriate judgment from that part of the swing (as configured for "beforeCutAngleJudgments", "accuracyJudgments", or "afterCutAngleJudgments").</li>
+            <li>%s: The total score for the cut.</li>
+            <li>%%: A literal percent symbol.</li>
+            <li>%n: A newline.</li>
+        </ul>
+        <p>uh ok thats the program enjoy</p>
+        <h4><i>"Should've just edited the json manually"</i></h4>
+        <h2>Main Judgments:</h2>
+        <div id="judgment0">
+            <hr>
+            <label>Red: </label>
+            <input id="red"><br>
+            <label>Green: </label>
+            <input id="green"><br>
+            <label>Blue: </label>
+            <input id="blue"><br>
+            <label>Alpha: </label>
+            <input id="alpha"><br>
+            <label>Fade: </label>
+            <input type="checkbox" id="fade"><br>
+            <label>Text: </label>
+            <input id="text"><br>
+            <label>Threshold: </label>
+            <input id="threshold"><br>
+            <hr>
+        </div>
+        <button id="newJudgment">ADD A NEW ONE</button><br>
+        
+        <h2>Accuracy Judgments:</h2>
+        <div id="accuracyJudgment0">
+            <hr>
+            <label>Text: </label>
+            <input id="text"><br>
+            <label>Threshold: </label>
+            <input id="threshold">
+            <hr>
+        </div>
+        <button id="newAccuracyJudgment">ADD A NEW ONE</button>
+        
+        <h2>After Cut Angle Judgments:</h2>
+        <div id="afterCutAngleJudgment0">
+            <hr>
+            <label>Text: </label>
+            <input id="text"><br>
+            <label>Threshold: </label>
+            <input id="threshold">
+            <hr>
+        </div>
+        <button id="newAfterCutAngleJudgment">ADD A NEW ONE</button><br>
+        
+        <h2>Before Cut Angle Judgments:</h2>
+        <div id="beforeCutAngleJudgment0">
+            <hr>
+            <label>Text: </label>
+            <input id="text"><br>
+            <label>Threshold: </label>
+            <input id="threshold">
+            <hr>
+        </div>
+        <button id="newBeforeCutAngleJudgment">ADD A NEW ONE</button><br>
+        <button id="generate">DO THE GENERATION THING YAYA</button><br>
+        <textarea id="output" rows=10 cols=60></textarea>
+    </body>
+</html>
